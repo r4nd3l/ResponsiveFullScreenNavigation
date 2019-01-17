@@ -1,0 +1,243 @@
+@font-face {
+    font-family: 'Lobster'; /*a name to be used later*/
+    src: url('../font/Lobster_1.4.otf'); /*URL to font*/
+}
+.fancy{
+  font-family: 'Lobster';
+  font-size: 1.2em;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+body{
+  background: url(../img/img_01.gif) no-repeat 50% 50%;
+  background-size: cover;
+  color: #fff !important;
+}
+.within{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 40%;
+}
+.brand{
+  background: #0006;
+  width: 13em;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 5px;
+}
+.brand i{
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper{
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-btn{
+  position: fixed;
+  margin: 1.2em;
+  right: 0;
+  z-index: 1;
+}
+
+button{
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+button:focus{
+  outline: none !important;
+}
+
+i{
+  outline: none;
+  padding: 0.8em;
+  color: #fff;
+  /* border: 1px solid #fff; */
+  background: #0006;
+  border-radius: 5px;
+}
+
+.row, .col-lg{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.col-lg{
+  height: 100vh;
+}
+
+.col-lg.overlay{
+  background: url(../img/img_14.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+  position: absolute;
+  top: -100%;
+}
+
+ul{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  font-family: Roboto;
+  display: inline-block;
+  opacity: 0.8;
+}
+
+li p{
+  cursor: pointer;
+  color: #000;
+  font-family: Lobster;
+  font-size: 1.6em;
+  font-weight: 200;
+}
+
+li p:hover{
+  color: #fff;
+}
+
+li:not(:last-child){
+  margin-right: 120px;
+}
+
+li:first-child:hover::before{
+  content: "";
+  z-index: -1;
+  width: 300px;
+  height: 400px;
+  display: block;
+  position: absolute;
+  top: -180px;
+  left: -30px;
+  background: url(../img/portrait/img_02.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+  transition: 1s;
+  animation: fade-in 2s ease-in-out;
+  border-radius: 5px;
+}
+li:nth-child(2):hover::before{
+  content: "";
+  z-index: -1;
+  width: 300px;
+  height: 400px;
+  display: block;
+  position: absolute;
+  top: -180px;
+  left: -30px;
+  background: url(../img/portrait/img_10.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+  transition: 1s;
+  animation: fade-in 2s ease-in-out;
+  border-radius: 5px;
+}
+li:nth-child(3):hover::before{
+  content: "";
+  z-index: -1;
+  width: 300px;
+  height: 400px;
+  display: block;
+  position: absolute;
+  top: -180px;
+  left: -30px;
+  background: url(../img/portrait/img_09.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+  transition: 1s;
+  animation: fade-in 2s ease-in-out;
+  border-radius: 5px;
+}
+li:nth-child(4):hover::before{
+  content: "";
+  z-index: -1;
+  width: 300px;
+  height: 400px;
+  display: block;
+  position: absolute;
+  top: -180px;
+  left: -30px;
+  background: url(../img/portrait/img_26.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+  transition: 1s;
+  animation: fade-in 2s ease-in-out;
+  border-radius: 5px;
+}
+
+@keyframes fade-in {
+  0%{
+    opacity: 0;
+    top: -160px;
+  }
+  50%{
+    opacity: 1;
+    top: -180px;
+  }
+  100%{
+    opacity: 1;
+    top: -180px;
+  }
+}
+
+@media(max-width: 900px){
+  li{
+    text-align: center;
+    display: block !important;
+    margin: 0 !important;
+    padding: 20px 0;
+  }
+  li:hover::before{
+    width: 0 !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* End */
